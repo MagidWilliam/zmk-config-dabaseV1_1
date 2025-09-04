@@ -10,14 +10,14 @@
 
         default_layer {
             bindings = <
-                &mmv MOVE_UP  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T
-                &kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T    &kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
-                &kp CAPS    &kp A  &kp S  &kp D  &kp F  &kp G    &kp LSHFT &kp Z &kp X  &kp C  &kp V  &kp B
-                &kp LSHFT   &kp Z &kp X  &kp C  &kp V  &kp B    &kp CAPS &kp A  &kp S  &kp D  &kp F  &kp G
-                &kp SPC     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0   &kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
-                &kp ESC     &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp SPC  &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-                &kp SPC     &kp N6 &kp N7 &kp N8 &kp N9 &kp N0   &kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
-                &kp ESC     &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp SPC  &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+                &mmv MOVE_UP  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T
+                &kp TAB       &kp Q  &kp W  &kp E  &kp R  &kp T    &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
+                &kp CAPS      &kp A  &kp S  &kp D  &kp F  &kp G    &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B
+                &kp LSHFT     &kp Z  &kp X  &kp C  &kp V  &kp B    &kp CAPS  &kp A  &kp S  &kp D  &kp F  &kp G
+                &kp SPC       &kp N6 &kp N7 &kp N8 &kp N9 &kp N0   &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
+                &kp ESC       &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp SPC   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+                &kp SPC       &kp N6 &kp N7 &kp N8 &kp N9 &kp N0   &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
+                &kp ESC       &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp SPC   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
             >;
         };
     };
