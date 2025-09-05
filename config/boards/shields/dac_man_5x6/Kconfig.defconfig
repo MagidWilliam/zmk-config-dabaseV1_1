@@ -13,6 +13,17 @@ if SHIELD_DAC_MAN_5X6_RIGHT
 config ZMK_KEYBOARD_NAME
     default "Corne-Severed-R"
 
+config IQS5XX
+    bool
+    default y
+
+# enable pointing
+config ZMK_POINTING
+    default y
+
+config INPUT
+    default y
+    
 endif
 
 if SHIELD_DAC_MAN_5X6_LEFT || SHIELD_DAC_MAN_5X6_RIGHT
