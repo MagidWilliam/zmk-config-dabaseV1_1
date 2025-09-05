@@ -1,5 +1,18 @@
 #include "dac_man_5x6.dtsi"
 
+/ {
+    aliases {
+        trackpad = &trackpad;
+    };
+
+    // Input listener
+    trackpad_input_listener: trackpad_input_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackpad>;
+        status = "okay";
+    };
+};
+
 &default_transform {
     col-offset = <6>;
 };
@@ -15,10 +28,7 @@
         ;
 };
 
-&right_encoder {
-    status = "okay";
-};
-
+// Enable GPIO controllers
 &gpio0 {
     status = "okay";
 };
@@ -29,5 +39,16 @@
 
 &i2c0 {
     status = "okay";
-    clock-frequency = <400000>;
+    clock-frequency = <I2C_BITRATE_FAST>;
+
+    trackpad: trackpad@74 {
+        compatible = "azoteq,iqs5xx";
+        reg = <0x74>;
+        dr-gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>;
+        status = "okay";
+        rotate-90;
+        sensitivity = <128>;
+        refresh-rate-active = <5>;
+        refresh-rate-idle = <20>;
+    };
 };
