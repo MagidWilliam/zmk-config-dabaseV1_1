@@ -39,7 +39,7 @@
         };
 
         hophopclick {
-            bindings = <&kp LC(LG(C))>;
+            bindings = <&kp LG(LA(C))>;
             key-positions = <25 34>;
         };
     };
