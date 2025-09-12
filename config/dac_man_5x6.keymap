@@ -116,7 +116,7 @@
 
         gaming {
             bindings = <
-&trans  &mt ESC TAB  &kp Q  &kp W  &kp E  &kp R  &mt T Y  &mt U I  &kp UP  &mt O P  &mt L M  &trans  &trans  &kp CAPS  &kp A  &kp S  &kp D  &kp F  &mt G H  &kp LEFT  &kp DOWN  &kp RIGHT  &mt J K  &trans  &trans  &kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &mt V B  &mt B N  &kp N1  &kp N2  &kp N3  &kp N4  &trans  &trans  &trans  &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &kp DEL  &kp BACKSPACE  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt TAB ESCAPE  &kp Q  &kp W  &kp E  &kp R  &mt T Y  &mt U I  &kp UP  &mt O P  &mt L M  &trans  &trans  &kp CAPS  &kp A  &kp S  &kp D  &kp F  &mt G H  &kp LEFT  &kp DOWN  &kp RIGHT  &mt J K  &trans  &trans  &kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &mt V B  &mt B N  &kp N1  &kp N2  &kp N3  &kp N4  &trans  &trans  &trans  &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &kp DEL  &kp BACKSPACE  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
