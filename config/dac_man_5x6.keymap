@@ -13,6 +13,19 @@
 
             tap-ms = <1>;
         };
+
+        // Define a mod-morph: "[" normally, "(" if Ctrl is held
+        mm_ctrl_brack_to_paren: mod_morph_ctrl_brack_to_paren {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp LBKT>, <&kp LPAR>;  // default, with Ctrl
+            mods = <(MOD_LCTL|MOD_RCTL)>;       // works with either Ctrl
+        };
+
+        mm_ctrl_R_brack_to_paren: mod_morph_ctrl_R_brack_to_paren {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp RBKT>, <&kp RPAR>;  // default, with Ctrl
+            mods = <(MOD_LCTL|MOD_RCTL)>;       // works with either Ctrl
+        };
     };
 
     combos {
@@ -102,7 +115,7 @@
         symbol {
             label = "sym";
             bindings = <
-&trans  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp APOS  &kp ASTRK  &trans  &trans  &kp LS(BACKSLASH)  &kp AMPS  &kp ESC  &trans  &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &arrowfunc  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &trans  &trans  &kp N0  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans  &kp COMMA  &kp DOT  &kp BACKSLASH  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp APOS  &kp ASTRK  &trans  &trans  &kp LS(BACKSLASH)  &kp AMPS  &kp ESC  &trans  &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &arrowfunc  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &trans  &trans  &kp N0  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans  &kp COMMA  &kp DOT  &kp BACKSLASH  &trans  &trans  &trans  &trans  &mm_ctrl_brack_to_paren  &mm_ctrl_brack_to_paren  &mm_ctrl_R_brack_to_paren  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
