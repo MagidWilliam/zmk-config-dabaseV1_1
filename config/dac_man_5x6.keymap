@@ -19,7 +19,7 @@
         compatible = "zmk,combos";
 
         gaming {
-            bindings = <&tog 6>;
+            bindings = <&tog 5>;
             key-positions = <41 42>;
         };
 
@@ -30,12 +30,22 @@
 
         hophopclick {
             bindings = <&kp LG(LA(C))>;
-            key-positions = <25 34>;
+            key-positions = <27 26>;
         };
 
         resetBT {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <1 5>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <10 43>;
+        };
+
+        hophopclick2 {
+            bindings = <&kp LG(LA(C))>;
+            key-positions = <32 33>;
         };
     };
 
@@ -75,7 +85,7 @@
 
         default_layer {
             bindings = <
-&trans  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SEMI  &trans  &trans  &kp A  &kp S  &kp R  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &trans  &trans  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp PERIOD  &kp SLASH  &trans  &trans  &trans  &trans  &lt 5 TAB  &mo 4  &lt 4 SPACE  &lt 3 LC(BACKSPACE)  &mo 3  &lt 2 ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SEMI  &trans  &trans  &kp A  &kp S  &kp R  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &trans  &trans  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp PERIOD  &kp SLASH  &trans  &trans  &trans  &trans  &lt 4 TAB  &mo 3  &kp SPACE  &kp LC(BACKSPACE)  &mo 2  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
@@ -85,38 +95,32 @@
 
         qwerty-bkb {
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &trans  &trans  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SQT  &trans  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans  &trans  &trans  &trans  &lt 5 TAB  &mo 4  &lt 4 SPACE  &lt 3 LC(BACKSPACE)  &mo 3  &lt 2 ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        NUM {
-            bindings = <
-&trans  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp APOS  &kp ASTRK  &trans  &kp LS(BACKSLASH)  &kp BACKSLASH  &kp AMPS  &kp ESC  &trans  &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &arrowfunc  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &kp N0  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans  &trans  &kp COMMA  &kp PERIOD  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &trans  &trans  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SQT  &trans  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans  &trans  &trans  &trans  &lt 4 TAB  &mo 3  &kp SPACE  &kp LC(BACKSPACE)  &mo 2  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         symbol {
             label = "sym";
             bindings = <
-&trans  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp APOS  &kp ASTRK  &trans  &kp LS(BACKSLASH)  &kp BACKSLASH  &kp AMPS  &kp ESC  &trans  &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &arrowfunc  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &trans  &trans  &kp N0  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans  &trans  &kp COMMA  &kp DOT  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp APOS  &kp ASTRK  &trans  &trans  &kp LS(BACKSLASH)  &kp AMPS  &kp ESC  &trans  &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &arrowfunc  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &trans  &trans  &kp N0  &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans  &kp COMMA  &kp DOT  &kp BACKSLASH  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         ARROWS {
             bindings = <
-&trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)  &kp LC(S)  &trans  &kp PG_UP  &kp UP  &kp PG_DN  &kp ESC  &trans  &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans  &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans  &trans  &trans  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp DELETE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)  &trans  &trans  &kp PG_UP  &kp UP  &kp PG_DN  &kp ESC  &trans  &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans  &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans  &trans  &trans  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp DELETE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)  &kp LC(F)  &trans  &msc SCRL_UP  &mmv MOVE_UP  &msc SCRL_DOWN  &kp ESCAPE  &trans  &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans  &mkp MB2  &mkp MB1  &mkp MB3  &trans  &trans  &trans  &trans  &trans  &trans  &switch_to_arabic  &lemmein  &mkp MB3  &mkp MB2  &mkp MB1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)  &trans  &trans  &msc SCRL_UP  &mmv MOVE_UP  &msc SCRL_DOWN  &kp ESCAPE  &trans  &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans  &mkp MB2  &mkp MB1  &mkp MB3  &trans  &trans  &trans  &trans  &trans  &trans  &switch_to_arabic  &lemmein  &mkp MB3  &mkp MB2  &mkp MB1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         gaming {
             bindings = <
-&trans  &mt TAB ESCAPE  &kp Q  &kp W  &kp E  &kp R  &mt T Y  &mt U I  &kp UP  &mt O P  &mt L M  &trans  &trans  &kp CAPS  &kp A  &kp S  &kp D  &kp F  &mt G H  &kp LEFT  &kp DOWN  &kp RIGHT  &mt J K  &trans  &trans  &kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &mt V B  &mt B N  &kp N1  &kp N2  &kp N3  &kp N4  &trans  &trans  &trans  &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &kp DEL  &kp BACKSPACE  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt TAB ESCAPE  &kp Q  &kp W  &kp E  &kp R  &mt T Y  &mt U I  &kp UP  &mt O P  &mt L M  &trans  &trans  &kp CAPS  &kp A  &kp S  &kp D  &kp F  &mt G H  &kp LEFT  &kp DOWN  &kp RIGHT  &mt J K  &trans  &trans  &kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &mt B V  &mt B N  &kp N1  &kp N2  &kp N3  &kp N4  &trans  &trans  &trans  &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &kp DEL  &kp BACKSPACE  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
