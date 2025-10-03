@@ -14,3 +14,16 @@
         , <&gpio0 31 GPIO_ACTIVE_HIGH>
         ;
 };
+
+&gpio0 {
+    status = "okay";
+};
+
+&gpio1 {
+    status = "okay";
+};
+
+&i2c0 {
+    status = "okay";
+    clock-frequency = <400000>;
+};
