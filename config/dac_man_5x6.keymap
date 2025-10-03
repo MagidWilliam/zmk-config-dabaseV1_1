@@ -91,7 +91,7 @@
         switch_to_arabic: switch_to_arabic {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &tog 5>;
+            bindings = <&kp LG(SPACE) &sl 2>;
             label = "SWITCH_TO_ARABIC";
         };
     };
