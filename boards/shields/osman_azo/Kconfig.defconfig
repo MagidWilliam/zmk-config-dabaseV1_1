@@ -1,4 +1,4 @@
-if SHIELD_OSMAN_AZO_RIGHT
+if SHIELD_OSMAN_AZO_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "osman_azo"
@@ -18,7 +18,7 @@ config INPUT
     default y
 endif
 
-if SHIELD_OSMAN_AZO_LEFT
+if SHIELD_OSMAN_AZO_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "osman_azo_L"
