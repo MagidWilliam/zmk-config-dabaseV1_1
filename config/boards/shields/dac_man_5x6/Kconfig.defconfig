@@ -1,17 +1,27 @@
-if SHIELD_DAC_MAN_5X6_LEFT
-
-config ZMK_KEYBOARD_NAME
-    default "Corne-Severed-L"
-
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-    default y
-
-endif
-
 if SHIELD_DAC_MAN_5X6_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "Corne-Severed-R"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+config IQS5XX
+    bool
+    default y
+
+# enable pointing
+config ZMK_POINTING
+    default y
+
+config INPUT
+    default y
+endif
+
+if SHIELD_DAC_MAN_5X6_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Corne-Severed-L"
 
 endif
 

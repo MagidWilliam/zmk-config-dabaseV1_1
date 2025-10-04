@@ -11,6 +11,19 @@
         ;
 };
 
+&gpio0 {
+    status = "okay";
+};
+
+&gpio1 {
+    status = "okay";
+};
+
+&i2c0 {
+    status = "okay";
+    clock-frequency = <400000>;
+};
+
 &left_encoder {
     status = "okay";
 };
