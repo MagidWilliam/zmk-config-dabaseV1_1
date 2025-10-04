@@ -1,10 +1,10 @@
-if SHIELD_DAC_MAN_5X6_RIGHT
+if SHIELD_OSMAN_AZO_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "Corne-Severed-R"
+    default "osman_azo"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
-    default y
+     default y
 
 config IQS5XX
     bool
@@ -18,15 +18,16 @@ config INPUT
     default y
 endif
 
-if SHIELD_DAC_MAN_5X6_LEFT
+if SHIELD_OSMAN_AZO_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Corne-Severed-L"
+    default "osman_azo_L"
 
 endif
 
-if SHIELD_DAC_MAN_5X6_LEFT || SHIELD_DAC_MAN_5X6_RIGHT
+if SHIELD_OSMAN_AZO_RIGHT || SHIELD_OSMAN_AZO_LEFT
 
 config ZMK_SPLIT
-    default y
+     default y
+
 endif
