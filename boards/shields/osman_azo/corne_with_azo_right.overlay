@@ -1,4 +1,5 @@
-#include "dac_man_5x6.dtsi"
+#include "corne_with_azo.dtsi"
+
 / {
     aliases {
         trackpad = &trackpad;
@@ -45,7 +46,6 @@
         reg = <0x74>;
         dr-gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>;
         status = "okay";
-        rotate-90;
         sensitivity = <128>;
         refresh-rate-active = <5>;
         refresh-rate-idle = <20>;
