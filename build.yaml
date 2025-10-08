@@ -20,8 +20,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: osman_azo_left
+    shield: corne_with_azo_left
   - board: nice_nano_v2
-    shield: osman_azo_right
+    shield: corne_with_azo_right
   - board: nice_nano_v2
     shield: settings_reset

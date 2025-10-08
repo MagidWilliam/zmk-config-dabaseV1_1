@@ -1,5 +1,5 @@
-config SHIELD_OSMAN_AZO_LEFT
-    def_bool $(shields_list_contains, osman_azo_left)
+config SHIELD_CORNE_WITH_AZO_LEFT
+    def_bool $(shields_list_contains, corne_with_azo_left)
 
-config SHIELD_OSMAN_AZO_RIGHT
-    def_bool $(shields_list_contains,osman_azo_right)
+config SHIELD_CORNE_WITH_AZO_RIGHT
+    def_bool $(shields_list_contains,corne_with_azo_right)

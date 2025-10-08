@@ -1,4 +1,4 @@
-#include "osman_azo.dtsi"
+#include "corne_with_azo.dtsi"
 
 &kscan0 {
     col-gpios
