@@ -11,36 +11,42 @@
         ;
 };
 
-&gpio0 {
+&pro_micro_i2c {
     status = "okay";
+    tps43: iqs5xx@74 {
+        status = "okay";
+        compatible = "azoteq,iqs5xx";
+        reg = <0x74>;
+
+        reset-gpios = <&gpio1 4 GPIO_ACTIVE_LOW>;
+        rdy-gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>;
+
+        /*
+         * Potentially non-exhaustive list of configuration options.
+         * See: dts/bindings/input/azoteq,iqs5xx-common.yaml for a full list.
+         */
+        one-finger-tap;
+        press-and-hold;
+        press-and-hold-time = <250>;
+        two-finger-tap;
+
+        scroll;
+        natural-scroll-x;
+
+        zoom;
+
+        bottom-beta = <15>;
+        stationary-threshold = <5>;
+
+        switch-xy;
+    };
 };
 
-&gpio1 {
-    status = "okay";
+&tps43_split {
+    device = <&tps43>;
+
 };
 
-&i2c0 {
-    status = "okay";
-    clock-frequency = <400000>;
-};
-
-&left_encoder {
-    status = "okay";
-};
-
-&gpio0 {
-    status = "okay";
-};
-
-&gpio1 {
-    status = "okay";
-};
-
-&i2c0 {
-    status = "okay";
-    clock-frequency = <400000>;
-};
-
-&left_encoder {
+&tps43_listener {
     status = "okay";
 };
