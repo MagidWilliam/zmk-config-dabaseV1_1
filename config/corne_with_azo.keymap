@@ -71,6 +71,11 @@
             bindings = <&kp LG(LA(C))>;
             key-positions = <32 33>;
         };
+
+        resety {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <6 10>;
+        };
     };
 
     macros {
