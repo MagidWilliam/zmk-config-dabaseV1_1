@@ -1,7 +1,7 @@
 if SHIELD_CORNE_WITH_AZO_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Qorn"
+    default "Qorn_L"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
      default y
