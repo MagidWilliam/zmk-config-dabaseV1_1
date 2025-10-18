@@ -6,16 +6,6 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
      default y
 
-# config IQS5XX
-#     bool
-#     default y
-
-# enable pointing
-# config ZMK_POINTING
-#     default y
-
-# config INPUT
-#     default y
 endif
 
 if SHIELD_CORNE_WITH_AZO_RIGHT
@@ -29,5 +19,4 @@ if SHIELD_CORNE_WITH_AZO_RIGHT || SHIELD_CORNE_WITH_AZO_LEFT
 
 config ZMK_SPLIT
      default y
-
 endif
