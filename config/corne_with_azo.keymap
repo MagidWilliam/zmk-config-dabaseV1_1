@@ -47,16 +47,6 @@
             key-positions = <41 42>;
         };
 
-        hamza {
-            bindings = <&kp X>;
-            key-positions = <13 22>;
-        };
-
-        hophopclick {
-            bindings = <&kp LG(LA(C))>;
-            key-positions = <27 26>;
-        };
-
         resetBT {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <1 5>;
@@ -67,34 +57,9 @@
             key-positions = <10 43>;
         };
 
-        hophopclick2 {
-            bindings = <&kp LG(LA(C))>;
-            key-positions = <32 33>;
-        };
-
         resety {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <6 10>;
-        };
-
-        nextProfile {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <30 34>;
-        };
-
-        profileZero {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <18 22>;
-        };
-
-        profile0L {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <17 13>;
-        };
-
-        profile1L {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <29 25>;
         };
     };
 
